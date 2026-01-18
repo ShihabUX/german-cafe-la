@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
@@ -19,8 +20,9 @@ const Footer = () => {
             <div style={{ fontSize: '0.9rem', opacity: 0.7 }}>
                 <p>&copy; {new Date().getFullYear()} La Cafleur. All rights reserved.</p>
                 <div style={{ marginTop: '0.5rem', display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-                    <span>Impressum</span>
-                    <span>Datenschutz</span>
+                    <Link to="/impressum" style={{ textDecoration: 'none', color: 'white' }}>Impressum</Link>
+                    <span style={{ opacity: 0.5 }}>|</span>
+                    <Link to="/impressum" style={{ textDecoration: 'none', color: 'white' }}>Datenschutz</Link>
                 </div>
             </div>
         </footer>
