@@ -57,16 +57,17 @@ const Hero = () => {
                     marginBottom: '1rem',
                     textShadow: '0 4px 10px rgba(0,0,0,0.2)'
                 }}>
-                    La Cafleur
+                    Coffee meets Flower
                 </h1>
                 <p style={{
                     fontSize: 'clamp(1.2rem, 2vw, 1.8rem)',
                     fontFamily: 'var(--font-body)',
                     letterSpacing: '2px',
                     fontWeight: 300,
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
+                    opacity: 0.9
                 }}>
-                    Coffee meets Flowers
+                    Ein Moment der Ruhe. Ein Schluck Poesie.
                 </p>
             </motion.div>
 
@@ -84,7 +85,7 @@ const Hero = () => {
                     cursor: 'pointer'
                 }}
                 onClick={() => {
-                    const nextSection = document.getElementById('concept');
+                    const nextSection = document.getElementById('signature');
                     if (nextSection) nextSection.scrollIntoView({ behavior: 'smooth' });
                 }}
             >

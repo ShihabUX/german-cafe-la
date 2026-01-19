@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +59,7 @@ const Navbar = () => {
                     fontWeight: 600,
                     letterSpacing: '1px'
                 }}>
-                    La Cafleur
+                    <img src={logo} alt="La Cafleur" style={{ height: '50px', width: 'auto' }} />
                 </Link>
 
                 {/* Desktop Links */}
