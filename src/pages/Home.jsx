@@ -8,6 +8,8 @@ import Quality from '../components/Quality';
 import VisitTeaser from '../components/VisitTeaser';
 import Socials from '../components/Socials';
 import Invitation from '../components/Invitation';
+import FounderStory from '../components/FounderStory';
+import VideoTeaser from '../components/VideoTeaser';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -21,9 +23,11 @@ const Home = () => {
         >
             <Hero />
             <Signature />
+            <FounderStory />
             <Offerings />
             <MenuHighlights />
             <Atmosphere />
+            <VideoTeaser />
             <Quality />
             <VisitTeaser />
             <Socials />

@@ -4,7 +4,8 @@
   /* Brand Colors */
   --color-teal: #079385;
   --color-mint: #afe0d8;
-  --color-mint-light: #e0f2ef; /* Lighter version for backgrounds */
+  --color-mint-light: #e0f2ef;
+  /* Lighter version for backgrounds */
   --color-brown: #442000;
   --color-white: #ffffff;
   --color-off-white: #fcfbf9;
@@ -30,7 +31,8 @@ html {
   color: var(--color-brown);
   scroll-behavior: smooth;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
 }
 
 body {
@@ -38,7 +40,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   font-weight: 400;
   color: var(--color-teal);
@@ -73,9 +80,11 @@ img {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--color-mint-light);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--color-teal);
   border-radius: 4px;
